@@ -1,0 +1,65 @@
+
+<html>
+<body>
+<h3>
+TODOリスト
+</h3>
+<p>
+実行したい番号のボタンを押してください。<br>
+1:タスクの追加<br>
+2:タスクの表示<br>
+3:タスクの削除<br>
+</p>
+<input type="button" value="1"id="4">
+<input type="button" value="2"id="5">
+<input type="button" value="3"id="6">
+<br>
+<textarea id="1"></textarea>
+<input type="button" value="実行"id="2">
+<p id="3">
+</p>
+
+<script>
+
+const textarea=document.getElementById("1")
+const buttonjikko=document.getElementById("2")
+const button1=document.getElementById("4")
+const button2=document.getElementById("5")
+const button3=document.getElementById("6")
+const p=document.getElementById("3")
+button1.addEventListener("click",todo1)
+button2.addEventListener("click",todo2)
+/* button3.addEventListener("click",todo3) */
+
+let task=textarea.value
+
+/* let i,c */
+
+function todo1 (){
+p.textContent="追加したいタスクを入力し実行ボタンを押してください。"
+button.addEventListener("click",push) 
+push()
+}
+
+function push(){
+tasktask.push("textarea.value")
+}
+
+function todo2 (){
+p.textContent="現在のタスクを表示します。"
+for(let i=0;i<=tasktask.length;++i){
+p.textContent=tasktask[i]
+}
+}
+
+/* function todo (){
+document.write("削除したいタスクの番号を入力し実行ボタンを押してください。")
+button.addEventListener("click",delete)
+function delete(){
+var tasktask=tasktask.splice(c,1)
+} */
+/* } */
+
+</script>
+</body>
+</html>
