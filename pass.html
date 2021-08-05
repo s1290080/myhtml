@@ -1,0 +1,26 @@
+<html>
+  <head lang="ja">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+<title>
+  パスワード照会
+</title>
+  </head>
+  
+<body>
+<input type="button" value="入力" onclick="gate();">
+  <a href="https://web-ext.u-aizu.ac.jp/~s1290080/index.html">ホームに戻る"</a>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    function gate(){
+    var UserInput = prompt("パスワードを入力して下さい:","");
+    if( /\W+/g.test(UserInput) ) {
+	alert("半角英数字のみを入力して下さい。");
+    }
+    else if( UserInput != null ) {
+	location.href = UserInput + ".html";
+    }
+}
+</script>
