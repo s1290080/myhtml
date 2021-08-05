@@ -1,0 +1,118 @@
+<html>
+
+  <head lang="ja">
+    <script type="text/javascript" src="add.js"></script>
+    <style>
+      .FlexTextarea {
+	  position: relative;
+	  font-size: 1rem;
+	  line-height: 1.8;
+      }
+      
+      .FlexTextarea__dummy {
+	  overflow: hidden;
+	  visibility: hidden;
+	  box-sizing: border-box;
+	  padding: 5px 15px;
+	  min-height: 120px;
+	  white-space: pre-wrap;
+	  word-wrap: break-word;
+	  overflow-wrap: break-word;
+	  border: 1px solid;
+      }
+      
+      .FlexTextarea__textarea {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  display: block;
+	  overflow: hidden;
+	  box-sizing: border-box;
+	  padding: 5px 15px;
+	  width: 100%;
+	  height: 100%;
+	  background-color: transparent;
+	  border: 1px solid #b6c3c6;
+	  border-radius: 4px;
+	  color: inherit;
+	  font: inherit;
+	  letter-spacing: inherit;
+	  resize: none;
+      }
+      
+      .FlexTextarea__textarea:focus {
+	  box-shadow: 0 0 0 4px rgba(37, 167, 195, 0.3);
+	  outline: 0;
+      }
+      
+    </style>
+    
+    <meta http-equiv="Content-Type" c.FlexTextarea {
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.FlexTextarea__dummy {
+  overflow: hidden;
+  visibility: hidden;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  min-height: 120px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  border: 1px solid;
+}
+
+.FlexTextarea__textarea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid #b6c3c6;
+  border-radius: 4px;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  resize: none;
+}
+
+.FlexTextarea__textarea:focus {
+  box-shadow: 0 0 0 4px rgba(35, 167, 195, 0.3);
+  outline: 0;
+}
+ontent="text/html; charset=UTF-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" />
+    <title>
+      コードの追加
+    </title>
+  </head>
+  
+  <body>
+    <h1>1.追加</h1>
+    ・機能の概略を入力してください。<br>
+    <textarea id="1"></textarea>
+    <br>
+    ・コードを入力してください。<br>
+    <div class="FlexTextarea">
+      <div class="FlexTextarea__dummy" aria-hidden="true"></div>
+      <textarea id="2" class="FlexTextarea__textarea"></textarea>
+    </div>
+    <br>
+    ・コメントを入力してください。<br>
+    <textarea id="3"></textarea>
+    <br>
+    <br>
+    <input type="button" id="4" value="実行">
+    <a href="https://web-ext.u-aizu.ac.jp/~s1290080/index.html">ホームに戻る"</a>
+    
+  </body>
+  
+</html>
+    
