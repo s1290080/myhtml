@@ -1,7 +1,7 @@
 function flexTextarea(el) {
-  const dummy = el.querySelector('.FlexTextarea__dummy')
-  el.querySelector('.FlexTextarea__textarea').addEventListener('input', e => {
-    dummy.textContent = e.target.value + '\u200b'
+    const dummy = el.querySelector('.FlexTextarea__dummy')
+    el.querySelector('.FlexTextarea__textarea').addEventListener('input', e => {
+      dummy.textContent = e.target.value + '\u200b'
   })
 }
 
@@ -16,8 +16,8 @@ var commentt=document.getElementById("3")
 var jikko=document.getElementById("4")
 jikko.addEventListenner("click",detcli)
 function detcli(){
-    matome.push(matomeme.value)
-    code.push(codede.value)
-    comment.push(commentt.value)
-location.href=index.html
+    matome.push(matomeme.value);
+    code.push(codede.value);
+    comment.push(commentt.value);
+    location.href=index.html
 }
