@@ -1,0 +1,89 @@
+<html>
+  <head lang="ja">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+  <title>
+  コード置き場
+</title>
+</head>
+<body>
+  <h1 class="wf-mplus1p" id="1" >
+  コード置き場
+</h1>
+<p class="wf-mplus1p" id="2">
+  書いたコードをまとめておくための場所です。<br>
+行いたい事項の番号を入力して下さい。<br>
+1〜3はパスワードを要求されます。<br>
+一般ユーザは4と5のみ行えます。<br>
+1：コードの追加<br>
+2：コードの削除<br>
+3：目次の表示<br>
+4：自己紹介<br>
+</p>
+<input type="number" min="1" max="4" id="4">
+<input type="button" value="実行" id="0">
+<br>
+<p id="5">
+</p>
+<ol id="9">
+</ol>
+<input type="number" min="1" max="5000" id="10">
+<input type="button" value="表示" id="11">
+</body>
+
+</html>
+
+<script type="text/javascript">
+  var p5 = document.getElementById("5");
+  var number = document.getElementById("4");
+  var number2 = document.getElementById("10");
+ var button1 = document.getElementById("0");
+  var button2 = document.getElementById("11");  
+  document.getElementById("10").style.visibility="hidden";
+  document.getElementById("11").style.visibility="hidden";  
+  button1.addEventListenner("click", detected);
+  button2.addEventListenner("click", show);  
+  
+  functon detected() {
+    switch (number.value) {
+  case 1:
+      add()
+      break;
+  case 2:
+      deletee()
+      break;
+  case 3:
+      contents()
+      break;
+  case 4:
+    location.href=intoroduce.html
+      break;
+  }
+}
+  
+  function add() {
+    goto()
+}
+  function deletee() {
+    goto()
+}
+  function contents() {
+      p5.textContent="閲覧したいコードの番号を入力してください。";
+      for(var i=0;i<matome.length;i++){
+	  var li=document.createElement('li');
+	  li.textContent=matome[i];
+	  document.getElementById('9').apendChild(li);
+      }
+      document.getElementById("10").style.visibility="visible";
+      document.getElementById("11").style.visibility="visible";
+  }
+  function goto() {
+    location.href = pass.html
+}
+  function show(){
+      scrollTo(0,0);
+      p5.textContent=matome[number2.value]
+      p5.textContent=code[number2.value]
+      p5.textContent=comment[number2.value]
+  }
+  </script>
+<script type="text/javascript" src="add.js"></script>
