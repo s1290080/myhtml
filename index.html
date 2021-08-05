@@ -35,39 +35,33 @@
 </html>
 
 <script type="text/javascript">
-  var p5 = document.getElementById("5");
+  var p5 = document.getElementById("5"); 
   var number = document.getElementById("4");
   var number2 = document.getElementById("10");
   var button1 = document.getElementById("0");
   var button2 = document.getElementById("11");  
   document.getElementById("10").style.visibility="hidden";
-  document.getElementById("11").style.visibility="hidden";  
-  button1.addEventListenner("click", detected);
-  button2.addEventListenner("click", show);  
+  document.getElementById("11").style.visibility="hidden";
+  button1.addEventListener("click", detected);
+  button2.addEventListener("click", show);  
   
-  functon detected() {
-      switch (number.value) {
+  function detected(number) {
+      switch (number) {
       case 1:
-	  add();
+	  location.href = "pass.html";
 	  break;
       case 2:
-	  deletee();
+	  location.href = "pass.html";
 	  break;
       case 3:
 	  contents();
 	  break;
       case 4:
-	  location.href=intoroduce.html;
+	  location.href="intoroduce.html";
 	  break;
       }
   }
   
-  function add() {
-      goto();
-  }
-  function deletee() {
-      goto();
-  }
   function contents() {
       p5.textContent="閲覧したいコードの番号を入力してください。";
       for(var i=0;i<matome.length;i++){
@@ -78,14 +72,12 @@
       document.getElementById("10").style.visibility="visible";
       document.getElementById("11").style.visibility="visible";
   }
-  function goto() {
-      location.href = pass.html;
-  }
-  function show(){
+  
+  function show(number2){
       scrollTo(0,0);
-      p5.textContent=matome[number2.value];
-      p5.textContent=code[number2.value];
-      p5.textContent=comment[number2.value];
+      p5.textContent=matome[number2];
+      p5.textContent=code[number2];
+      p5.textContent=comment[number2];
   }
 </script>
 <script type="text/javascript" src="add.js"></script>
