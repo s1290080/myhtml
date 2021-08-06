@@ -36,4 +36,9 @@ deletee.htmlでは先程の配列の要素を削除します。目次と同じ�
 
 
 問題点
-index.htmlから他のページに飛ぶことができない。
+      for(var i=0;i<matome.length;i++){
+	  var li=document.createElement('li');
+	  li.textContent=matome[i];
+	  document.getElementById('9').apendChild(li);
+      }
+      が機能していない
