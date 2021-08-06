@@ -16,8 +16,21 @@ var commentt=document.getElementById("3")
 var jikko=document.getElementById("4")
 jikko.addEventListenner("click",detcli)
 function detcli(){
-    matome.push(matomeme.value);
-    code.push(codede.value);
-    comment.push(commentt.value);
+    detcli1();
+    detcli2();
+    detcli3();  
     location.href=index.html
+}
+function detcli1(){
+    matome.push(matomeme.value);
+    return matome;
+}
+
+function detcli2(){
+    code.push(codede.value); 
+    return code;
+}
+function detcli3(){
+    comment.push(commentt.value);
+        return comment;
 }
