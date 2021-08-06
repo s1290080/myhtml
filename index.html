@@ -11,9 +11,6 @@
     </h1>
     <p class="wf-mplus1p" id="2">
       書いたコードをまとめておくための場所です。<br>
-      行いたい事項の番号を入力して下さい。<br>
-      1〜3はパスワードを要求されます。<br>
-      一般ユーザは4と5のみ行えます。<br>
       1：コードの追加<br>
       2：コードの削除<br>
       3：目次の表示<br>
@@ -47,16 +44,16 @@
   
   function detected() {
       switch (number.value) {
-      case 1:
+      case "1":
 	  location.href = "pass.html";
 	  break;
-      case 2:
+      case "2":
 	  location.href = "pass.html";
 	  break;
-      case 3:
+      case "3":
 	  contents();
 	  break;
-      case 4:
+      case "4":
 	  location.href="intoroduce.html";
 	  break;
       }
@@ -69,11 +66,11 @@
 	  li.textContent=matome[i];
 	  document.getElementById('9').apendChild(li);
       }
-      document.getElementById("10").style.visibility="visible";
-      document.getElementById("11").style.visibility="visible";
+     document.getElementById("10").style.visibility="visible";
+     document.getElementById("11").style.visibility="visible";
   }
   
-  function show(number2){
+  function show(){
       scrollTo(0,0);
       p5.textContent=matome[number2];
       p5.textContent=code[number2];
