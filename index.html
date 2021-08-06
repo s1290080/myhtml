@@ -60,6 +60,7 @@
   }
   
   function contents() {
+      var matome = detcli1();
       p5.textContent="閲覧したいコードの番号を入力してください。";
       for(var i=0;i<matome.length;i++){
 	  var li=document.createElement('li');
@@ -72,9 +73,12 @@
   
   function show(){
       scrollTo(0,0);
+      var matome = detcli1();
+      var code = detcli2();
+      var comment = detcli3();
       p5.textContent=matome[number2];
       p5.textContent=code[number2];
       p5.textContent=comment[number2];
   }
 </script>
-<script type="text/javascript" src="add.js"></script>
+  <script type="text/javascript" src="add.js"></script>
