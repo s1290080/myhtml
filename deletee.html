@@ -7,25 +7,25 @@
   </head>
   <body>
     削除したいコードの番号を入力してください。<br>
-    <ol id="12">
+    <ol id="deleteeol1">
     </ol>
-    <input type="number" min="1" max="5000" id="13">
-    <input type="button" value="削除" id="14">
+    <input type="number" min="1" max="5000" id="deleteenumber1">
+    <input type="button" value="削除" id="deleteebutton1">
     <a href="https://web-ext.u-aizu.ac.jp/~s1290080/index.html">ホームに戻る</a>
     
     <script type="text/javascript">
-      var number3 = document.getElementById("13");
-      var button3 = document.getElementById("14");
+      var number3 = document.getElementById("deleteenumber1");
+      var button3 = document.getElementById("deleteebutton1");
       button3.addEventListenner("click", sakujo);
       for(var i=0;i<matome.length;i++){
 	  var li=document.createElement('li');
 	  li.textContent=matome[i];
-	  document.getElementById('12').apendChild(li);
+	  document.getElementById('deleteeol1').appendChild(li);
 	  function sakujo(){
-	      matome.splice(number3,1);
-	      code.splice(number3,1);
-	      comment.splice(number3,1);
-	      window.location.href='https://web-ext.u-aizu.ac.jp/~s1290080/index.html';
+	      matome.splice("number3",1);
+	      code.splice("number3",1);
+	      comment.splice("number3",1);
+	      location.href="index.html";
 	  }
       }
     </script>
