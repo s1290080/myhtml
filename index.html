@@ -4,46 +4,46 @@
     <title>
       コード置き場
     </title>
-</head>
+  </head>
   <body>
-    <h1 class="wf-mplus1p" id="1" >
+    <h1 class="wf-mplus1p" id="indexh1" >
       コード置き場
     </h1>
-    <p class="wf-mplus1p" id="2">
+    <p class="wf-mplus1p" id="indexp1">
       書いたコードをまとめておくための場所です。<br>
       1：コードの追加<br>
       2：コードの削除<br>
       3：目次の表示<br>
       4：自己紹介<br>
     </p>
-    <input type="number" min="1" max="4" id="4">
-    <input type="button" value="実行" id="0">
+    <input type="number" min="1" max="4" id="indexnumber1">
+    <input type="button" value="実行" id="indexbutton1">
     <br>
-    <p id="5">
+    <p id="indexp2">
     </p>
     <br>
-    <ol id="9">
+    <ol id="indexol1">
     </ol>
     <br>
-    <input type="number" min="1" max="5000" id="10">
-    <input type="button" value="表示" id="11">
+    <input type="number" min="1" max="5000" id="indexnumber2">
+    <input type="button" value="表示" id="indexbutton2">
   </body>
   
 </html>
 
 <script type="text/javascript">
-  var p5 = document.getElementById("5"); 
-  var number = document.getElementById("4");
-  var number2 = document.getElementById("10");
-  var button1 = document.getElementById("0");
-  var button2 = document.getElementById("11");  
-  document.getElementById("10").style.visibility="hidden";
-  document.getElementById("11").style.visibility="hidden";
+  var indexp2= document.getElementById("indexp2"); 
+  var number1 = document.getElementById("indexnumber1");
+  var number2 = document.getElementById("indexnumber2");
+  var button1 = document.getElementById("indexbutton1 ");
+  var button2 = document.getElementById("indexbutton2");  
+  document.getElementById("indexnumber2").style.visibility="hidden";
+  document.getElementById("indexbutton2").style.visibility="hidden";
   button1.addEventListener("click", detected);
   button2.addEventListener("click", show);  
   
   function detected() {
-      switch (number.value) {
+      switch (number1.value) {
       case "1":
 	  location.href = "pass.html";
 	  break;
@@ -54,21 +54,21 @@
 	  contents();
 	  break;
       case "4":
-	  location.href="intoroduce.html";
-	  break;
+	  location.href="introduce.html";
+	  break;	  
       }
   }
   
   function contents() {
       var matome = detcli1();
-      p5.textContent="閲覧したいコードの番号を入力してください。";
+      indexp2.textContent="閲覧したいコードの番号を入力してください。";
       for(var i=0;i<matome.length;i++){
 	  var li=document.createElement('li');
 	  li.textContent=matome[i];
-	  document.getElementById('9').apendChild(li);
+	  document.getElementById('indexol1').appendChild(li);
       }
-     document.getElementById("10").style.visibility="visible";
-     document.getElementById("11").style.visibility="visible";
+      document.getElementById("indexnumber2").style.visibility="visible";
+      document.getElementById("indexbutton2").style.visibility="visible";
   }
   
   function show(){
@@ -76,9 +76,9 @@
       var matome = detcli1();
       var code = detcli2();
       var comment = detcli3();
-      p5.textContent=matome[number2];
-      p5.textContent=code[number2];
-      p5.textContent=comment[number2];
+      indexp2.textContent=matome["number2"];
+      indexp2.textContent=code["number2"];
+      indexp2.textContent=comment["number2"];
   }
 </script>
-  <script type="text/javascript" src="add.js"></script>
+<script type="text/javascript" src="add.js"></script>
