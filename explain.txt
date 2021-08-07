@@ -73,10 +73,5 @@ deleteebutton1	実行ボタン
 
 <<<<<問題点>>>>>
 -index.htmlにおいてlocation.hrefが機能しない
--index.htmlにおいて for(var i=0;i<matome.length;i++){
-	  var li=document.createElement('li');
-	  li.textContent=matome[i];
-	  document.getElementById('9').apendChild(li);
-      }
-      が機能しない
+-index.htmlにおいてdetected関数が機能しない
 -index.htmlとdeletee.htmlにおいてadd.jsの中にある配列がうまく読み込めていない
